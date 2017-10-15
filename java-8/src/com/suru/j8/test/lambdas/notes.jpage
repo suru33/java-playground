@@ -1,0 +1,39 @@
+// Syntax
+
+(input arguments) -> body
+
+(String name) -> System.out.println("Hello, " + name);
+
+(name) -> System.out.println("Hello, " + name);
+
+name -> System.out.println("Hello, " + name);
+
+Runnable r = () -> System.out.println("Hello, " + name);
+
+(Trade t, Menu<Item> items) -> {
+	int sum = items.sumAll();
+	return prepareTrade(sum);
+}
+
+// return values
+	implicit
+	explicit
+	
+// type inference
+// java compiler automatically determines the types in lambda arguments
+	
+interface Pricer {
+	public List<Trade> skew(List<Trade> trades, int price);		
+}
+
+Pricer p1 = (List<Trade> trades, int price) -> {
+	// logic
+}
+
+// both will work - types are optional
+Pricer p2 = (trades, price) -> {
+	// logic
+}
+	
+	
+	
