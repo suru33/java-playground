@@ -46,6 +46,10 @@ public class ConstructorReferenceExample {
 
 		// directly go for public IMovie(int id, String name) constructor
 		NameMovieFactory nameMovieFactory = IMovie::new;
+		
+		factory1.create(10);
+		factory2.create(12);
+		nameMovieFactory.create(1, "Spy");
 
 	}
 

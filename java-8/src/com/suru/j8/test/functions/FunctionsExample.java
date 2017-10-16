@@ -13,8 +13,8 @@ public class FunctionsExample {
 
 	private void testThisExample() {
 		Supplier<Map<Integer, String>> dataSupplier = this::prepareData;
+		
 		Function<Integer, String> dataFunction = i -> dataSupplier.get().get(i);
-
 		System.out.println(dataFunction.apply(1));
 
 	}

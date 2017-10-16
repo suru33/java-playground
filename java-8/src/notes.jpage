@@ -34,6 +34,35 @@ Pricer p1 = (List<Trade> trades, int price) -> {
 Pricer p2 = (trades, price) -> {
 	// logic
 }
-	
-	
-	
+
+//predicate
+public interface Predicate<T> {
+
+	boolean test(T t);
+}
+
+// consumer
+@FunctionalInterface
+public interface Consumer<T> {
+
+    void accept(T t);
+
+    default Consumer<T> andThen(Consumer<? super T> after) {
+        // logic
+    }
+}
+
+//supplier
+@FunctionalInterface
+public interface Supplier<T> {
+    T get();
+}
+
+//function 
+@FunctionalInterface
+public interface Function<T, R> {
+
+    R apply(T t);
+    :
+    :
+}
