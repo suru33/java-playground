@@ -44,7 +44,6 @@ public class TestingInheritance {
 		System.out.println(hotelMotel.getHotel());
 		System.out.println(hotelMotel.getMotel());
 		System.out.println(hotelMotel.getName());
-
 	}
 
 }
