@@ -2,4 +2,5 @@
 /RemoteSystemsTempFiles/
 /Servers/
 /.recommenders/
+/.sonarlint/
 /.vscode/
